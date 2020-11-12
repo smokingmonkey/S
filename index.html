@@ -5,6 +5,7 @@
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+        <script src="scripts/play-on-window-click.js"></script>     
         <script>
             AFRAME.registerComponent('videohandler', {
                 init: function () {
@@ -62,7 +63,7 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
-                <a-video
+                <a-video play-on-window-click
                     width="4.08" 
                     height="2.55" 
                     src="#vid"
